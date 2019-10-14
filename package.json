@@ -1,0 +1,22 @@
+{
+  "name": "charm",
+  "version": "1.0.0",
+  "description": "Charm is a photography site",
+  "main": "./index.js",
+  "homepage": "https://multipleillusionsi.github.io/сharm/",
+  "scripts": {
+    "deploy": "gh-pages -d dist",
+    "start": "parcel src/index.pug -d _test",
+    "build": "parcel build src/index.pug --public-url ./"
+  },
+  "author": "Zakharov S.S.",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "pug": "^2.0.4"
+  },
+  "dependencies": {
+    "gh-pages": "^2.1.1",
+    "sass": "^1.23.0-module.beta.1"
+  }
+}
