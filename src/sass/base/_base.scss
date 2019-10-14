@@ -32,10 +32,10 @@ body {
   @include Garamond(regular);
   line-height: 1.6;
   background-color: #e6d8cc;
-  padding: 2rem 3rem;
 }
 
 main {
+  padding-top: 14rem;
   background-color: #e6d8cc;
 }
 
@@ -45,7 +45,6 @@ header {
 
 li {
   list-style: none;
-  font-size: 36px;
 }
 
 a {
@@ -55,4 +54,5 @@ a {
 
 .container {
   max-width: 1920px;
+  padding: 0 3rem;
 }

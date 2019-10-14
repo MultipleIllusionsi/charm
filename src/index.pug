@@ -9,10 +9,11 @@ html(lang="en")
         title Charm
     body
         div.container
-            header.header
-                a(href="#").header__logo Charm
-                nav
+            header.header       
+                nav(role="menu")
                     ul.header__nav
+                        li
+                            a(href="#").header__logo Charm
                         li.header__nav-item.link-active 
                             a(href="#") Work
                         li.header__nav-item 
@@ -31,9 +32,14 @@ html(lang="en")
                         figcaption.image__desc
                             h2.image-heading New Tendency
                             h4.image-type Editorial
-                section.section-2 Section 2
-                section.section-3 Section 3
-                section.section-4 Section 4
+                section.section2
+                    figure.section2__img1
+                        img(src="/assets/page1/3.jpg", alt="img3", class="")
+                        figcaption
+                            h2.image-heading In Anxious Anticipation
+                            h4.image-type Editorial
+                section.section3 Section 3
+                section.section4 Section 4
                
                 
                 
