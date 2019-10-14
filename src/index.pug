@@ -4,16 +4,37 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=EB+Garamond:400,700|Play&display=swap")
         link(rel="stylesheet", href="./sass/main.scss")
         title Charm
     body
         div.container
-            section.header
-                nav.header-nav
-                    ul
-                        li.header-nav__item 1
-                        li.header-nav__item 2 
-                        li.header-nav__item 3
-                        li.header-nav__item 4
-                div.header-img Charm
+            header.header
+                a(href="#").header__logo Charm
+                nav
+                    ul.header__nav
+                        li.header__nav-item.link-active 
+                            a(href="#") Work
+                        li.header__nav-item 
+                            a(href="#") Gallery
+                        li.header__nav-item 
+                            a(href="#") Info
+            main.main 
+                section.section1 
+                    figure.section1__img1
+                        img(src="/assets/page1/1.jpg", alt="img1", class="")
+                        figcaption
+                            h2.image-heading Order in the Cours
+                            h4.image-type Editorial
+                    figure.section1__img2
+                        img(src="/assets/page1/2.png", alt="img2", class="")
+                        figcaption.image__desc
+                            h2.image-heading New Tendency
+                            h4.image-type Editorial
+                section.section-2 Section 2
+                section.section-3 Section 3
+                section.section-4 Section 4
+               
+                
+                
         

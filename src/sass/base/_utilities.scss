@@ -1,0 +1,32 @@
+.link-active {
+  color: #b20000;
+}
+
+img {
+  width: 100%;
+  filter: grayscale(1);
+  mix-blend-mode: multiply;
+
+  &:hover {
+    filter: none;
+    mix-blend-mode: normal;
+  }
+}
+
+.image {
+  &-heading {
+    @include Garamond(bold);
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+  }
+
+  &-type {
+    @include Garamond(regular);
+    font-size: 12px;
+    color: #b20000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+}

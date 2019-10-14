@@ -17,6 +17,21 @@
   @if $breakpoint == big-desktop {
     @media only screen and (min-width: 112.5em) {
       @content;
-    } //1800
+    } //1800px
   }
+}
+
+///////FONTS
+@mixin Garamond($type) {
+  font-family: "EB Garamond", serif;
+  @if $type == bold {
+    font-weight: 700;
+  } @else if $type == regular {
+    font-weight: 400;
+  }
+}
+
+@mixin Play {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
 }

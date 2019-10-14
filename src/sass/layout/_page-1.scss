@@ -1,0 +1,14 @@
+.section1 {
+  padding: 6rem 0rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img1 {
+    width: 45%;
+  }
+  &__img2 {
+    width: 33%;
+  }
+}
