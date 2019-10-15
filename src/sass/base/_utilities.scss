@@ -73,6 +73,10 @@ img {
   width: 50%;
   margin: 15rem auto;
 
+  @include response(phone) {
+    width: 80%;
+  }
+
   &::before {
     content: "";
     margin-bottom: 4rem;
@@ -89,4 +93,16 @@ img {
 
 .mr-auto {
   margin-right: auto;
+}
+
+section[class^="section"] {
+  @include response(phone) {
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+      width: 100% !important;
+      margin: 10rem 0 0 !important;
+    }
+  }
 }

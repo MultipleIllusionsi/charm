@@ -74,6 +74,10 @@
     &__img1 {
       width: 100%;
       margin-left: 10rem;
+
+      @include response(phone) {
+        margin-left: 0;
+      }
     }
     &__img2 {
       margin-top: 15rem;

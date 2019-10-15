@@ -32,6 +32,7 @@ body {
   @include Garamond(regular);
   line-height: 1.6;
   background-color: #e6d8cc;
+  min-width: 320px;
 }
 
 main {
