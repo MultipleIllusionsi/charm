@@ -1,0 +1,143 @@
+.page2 {
+  .section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__img1 {
+      width: 33%;
+      margin-left: 10rem;
+    }
+    &__img2 {
+      width: 40%;
+    }
+  }
+
+  .section2 {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__img1 {
+      width: 50%;
+    }
+    &__quote {
+      width: 30%;
+      margin: 0 auto 5rem;
+    }
+  }
+
+  .section3 {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    &__img1 {
+      width: 33%;
+      margin-left: 10rem;
+    }
+    &__img2 {
+      width: 48%;
+    }
+  }
+
+  .section4 {
+    margin-top: 20rem;
+    &__img1 {
+      width: calc(100% - 20rem);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .section5 {
+    margin-top: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content {
+      &--left {
+        width: 32%;
+      }
+
+      &--right {
+        width: 35%;
+        display: flex;
+        margin-right: 10rem;
+        flex-direction: column;
+      }
+    }
+
+    &__img1 {
+      width: 100%;
+      margin-left: 10rem;
+    }
+    &__img2 {
+      margin-top: 15rem;
+      width: 100%;
+    }
+    &__quote {
+      width: 100%;
+    }
+  }
+
+  .section6 {
+    margin-top: 20rem;
+
+    &__img1 {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .section7 {
+    margin-top: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content {
+      &--left {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10rem;
+      }
+
+      &--right {
+        width: 25%;
+        margin-right: 10rem;
+      }
+    }
+
+    &__img1 {
+      width: 100%;
+    }
+    &__img2 {
+      margin-top: 10rem;
+      width: 100%;
+    }
+    &__img3 {
+      width: 100%;
+    }
+  }
+
+  .section8 {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    &__img1 {
+      width: 50%;
+    }
+    &__quote {
+      width: 33%;
+      margin: 10rem auto 0;
+    }
+  }
+}

@@ -7,6 +7,7 @@
   "scripts": {
     "deploy": "gh-pages -d dist",
     "start": "parcel src/index.pug -d _test",
+    "start2": "parcel src/work-more.pug -d _test",
     "build": "parcel build src/index.pug --public-url ./"
   },
   "author": "Zakharov S.S.",
