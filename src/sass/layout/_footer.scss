@@ -1,0 +1,26 @@
+.footer {
+  background-color: #333;
+  padding: 2rem 3rem;
+  color: rgba(230, 216, 204, 0.5);
+
+  @include Play;
+  font-size: 12px;
+  letter-spacing: 1px;
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20rem;
+
+    &-item {
+      &:not(:first-child) {
+        padding: 0 2rem;
+      }
+
+      &:nth-child(2) {
+        margin-left: auto;
+      }
+    }
+  }
+}

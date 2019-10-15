@@ -1,10 +1,10 @@
 .header {
   background: #e6d8ccd5;
   z-index: 100;
-  width: calc(100% - 6rem);
+  width: 100%;
   position: fixed;
   display: flex;
-  padding: 2rem 0;
+  padding: 2rem 3rem;
 
   &__logo {
     display: inline-block;
