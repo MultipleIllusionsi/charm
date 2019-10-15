@@ -19,6 +19,7 @@ img {
     font-size: 36px;
     color: #333;
     text-align: center;
+    letter-spacing: 0.5px;
   }
 
   &-type {
@@ -28,6 +29,42 @@ img {
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
+  }
+}
+
+.quote {
+  &-text {
+    @include Garamond(regular);
+    font-size: 20px;
+    color: #333;
+    letter-spacing: 0.5px;
+    text-align: left;
+    padding-bottom: 1.5rem;
+  }
+
+  &-author {
+    @include Garamond(bold);
+    font-size: 12px;
+    color: #b20000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: left;
+    padding-top: 1.5rem;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #333;
+  }
+  &::before {
+    margin-bottom: 2.5rem;
+  }
+  &::after {
+    margin-top: 2.5rem;
   }
 }
 

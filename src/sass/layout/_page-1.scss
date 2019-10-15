@@ -14,3 +14,92 @@
 .section2 {
   margin-top: 15rem;
 }
+
+.section3 {
+  margin-top: 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img1 {
+    width: 42%;
+  }
+
+  &__img2 {
+    width: 42%;
+    margin: 0 10rem 10rem 0;
+  }
+}
+
+.section4 {
+  margin-top: 15rem;
+
+  &__quote {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.section5 {
+  margin-top: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &__img1 {
+    margin-left: 7.5rem;
+    width: 42%;
+  }
+
+  &__img2 {
+    width: 32%;
+    margin-right: 7.5rem;
+    margin-bottom: 10rem;
+  }
+}
+
+.section6 {
+  margin-top: 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &__quote {
+    width: 42%;
+    margin-left: 7.5rem;
+  }
+
+  &__img1 {
+    width: 40%;
+    margin-bottom: 5rem;
+  }
+}
+
+.section7 {
+  margin-top: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__img1 {
+    margin-left: 7.5rem;
+    width: 32%;
+  }
+
+  &__img2 {
+    margin-top: 10rem;
+    width: 40%;
+    margin-right: 7.5rem;
+  }
+}
+
+.section8 {
+  margin-top: 20rem;
+
+  &__img1 {
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
