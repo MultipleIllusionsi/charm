@@ -31,17 +31,12 @@ html {
 body {
   @include Garamond(regular);
   line-height: 1.6;
-  background-color: #e6d8cc;
   min-width: 320px;
 }
 
 main {
   padding: 14rem 3rem 0;
-  background-color: #e6d8cc;
-}
-
-header {
-  background-color: #e6d8cc;
+  // background-color: #e6d8cc;
 }
 
 li {

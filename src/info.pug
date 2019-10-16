@@ -1,0 +1,53 @@
+include pug/page-template.pug
+    header.header.page-info
+        include pug/header.pug
+    main.main.page-info
+        section.section1 
+            blockquote.section1__quote-primary.image-heading Ouur is a lifestyle publisher and agency creating print and digital media for a young creative audience.
+            .section1__quote--secondary
+                p.quote-text Ouur has offices in Denmark, Japan and the United States and accesses a hard-to-reach audience of young creatives through publications including Kinfolk magazine.
+                p.quote-text We also offer our media expertise to a global list of clients who seek progressive campaigns, films, content creation and bespoke publications. Clients include Zara, Toast, West Elm, Diesel, LG Electronics, Minted, Isetan and Stutterheim.
+        section.section2
+            .section2__contacts
+                p Letters, visits, submissions and inquiies are warmly welcomed.
+                div
+                    a(href="mailto:info@ouurmedia.com", class="") info@ouurmedia.com
+                address 
+                    | Head Office: 
+                    br
+                    | Amagertorv 14, 1 
+                    br 
+                    | 1160 Copenhagen
+            .section2__img        
+                img(src="/assets/page-info/1.jpg", alt="img1", class="page-info__img")
+        section.section3
+            figure.section3__img1
+                figcaption.section3__head
+                    h3 Denmark
+                    address
+                        | Amagertorv 14, 1 
+                        br 
+                        | 1160 Copenhagen
+                img(src="/assets/page-info/2.jpg", alt="img2", class="page-info__img")
+            figure.section3__img2
+                figcaption.section3__head
+                    h3 Japan
+                    address
+                        | 2-16-9 Higashi, 7th Floor
+                        br 
+                        | Shibuya-ku, 150-0011 Tokyo
+                img(src="/assets/page-info/3.jpg", alt="img3", class="page-info__img")       
+        section.section4
+            .section4__job
+                h4 Job opportunities
+                div
+                    p Interested in joining the team? We'd love to hear from you.
+                    a(href="#", class="section4__job-link") View current job openings
+                  
+            .section4__sub
+                h4 Stay informed
+                div
+                    p Enter your email below to receive our newsletter.
+                    input(type="mail", placeholder="Email Address", class="sub-input")
+                    button(type="submit", class="submit-button") 
+    include pug/footer.pug

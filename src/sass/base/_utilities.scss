@@ -71,7 +71,8 @@ img {
 
 .next-page {
   width: 50%;
-  margin: 15rem auto;
+  margin: 0 auto;
+  padding: 15rem 0;
 
   @include response(phone) {
     width: 80%;
@@ -85,14 +86,6 @@ img {
     width: 100%;
     background-color: #333;
   }
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
 }
 
 section[class^="section"] {

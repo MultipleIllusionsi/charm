@@ -10,6 +10,9 @@
   @include response(phone) {
     font-size: 10px;
   }
+  &__sublist {
+    text-align: right;
+  }
   &__contacts {
     display: flex;
     justify-content: space-between;
@@ -17,27 +20,8 @@
     margin-right: 20rem;
 
     @include response(phone) {
-      margin: 0;
-      flex-direction: column;
-    }
-
-    &-item {
-      &:not(:first-child) {
-        padding: 0 2rem;
-      }
-
-      &:nth-child(2) {
-        margin-left: auto;
-      }
-
-      @include response(phone) {
-        margin: 0;
-
-        &:nth-child(2) {
-          margin: 0;
-          padding: 3rem 0;
-        }
-      }
+      margin-right: 0;
+      align-items: flex-start;
     }
   }
 }
