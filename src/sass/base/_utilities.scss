@@ -23,7 +23,7 @@ img {
   }
 
   &-type {
-    @include Garamond(bold);
+    @include Garamond(medium);
     font-size: 12px;
     color: #b20000;
     text-transform: uppercase;
@@ -34,7 +34,7 @@ img {
 
 .quote {
   &-text {
-    @include Garamond(regular);
+    @include Garamond(medium);
     line-height: 26.6px;
     font-size: 20px;
     color: #333;
@@ -44,7 +44,7 @@ img {
   }
 
   &-author {
-    @include Garamond(regular);
+    @include Garamond(medium);
     font-size: 12px;
     color: #b20000;
     text-transform: uppercase;

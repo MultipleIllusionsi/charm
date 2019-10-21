@@ -38,16 +38,16 @@ include pug/page-template.pug
                         | Shibuya-ku, 150-0011 Tokyo
                 img(src="/assets/page-info/3.jpg", alt="img3", class="page-info__img")       
         section.section4
-            .section4__job
-                h4 Job opportunities
-                div
+            div
+                h4.section4__heading Job opportunities
+                div.section4__text
                     p Interested in joining the team? We'd love to hear from you.
-                    a(href="#", class="section4__job-link") View current job openings
-                  
-            .section4__sub
-                h4 Stay informed
-                div
+                    a(href="#", class="section4-link") View current job openings     
+            div
+                h4.section4__heading Stay informed
+                div.section4__text
                     p Enter your email below to receive our newsletter.
-                    input(type="mail", placeholder="Email Address", class="sub-input")
-                    button(type="submit", class="submit-button") 
+                    form(action="#", class="section4__form")
+                        input(type="mail", placeholder="Email Address")
+                        button(type="submit") 
     include pug/footer.pug

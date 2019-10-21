@@ -24,10 +24,16 @@
 ///////FONTS
 @mixin Garamond($type) {
   font-family: "EB Garamond", serif;
-  @if $type == bold {
-    font-weight: 700;
-  } @else if $type == regular {
+  @if $type == regular {
     font-weight: 400;
+  } @else if $type == medium {
+    font-weight: 500;
+  } @else if $type == semibold {
+    font-weight: 600;
+  } @else if $type == bold {
+    font-weight: 700;
+  } @else if $type == extrabold {
+    font-weight: 800;
   }
 }
 

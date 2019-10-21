@@ -4,20 +4,45 @@ header.page-info {
 
 .page-info {
   background-color: #f8f8f8;
+
   &__img {
     filter: none;
   }
 
   .section1 {
     & .image-heading {
-      width: 75%;
+      width: 50%;
       margin: 0 auto;
       line-height: 4rem;
+
+      @include response(tab-land) {
+        width: 75%;
+        line-height: 5rem;
+      }
+
+      @include response(phone) {
+        width: 100%;
+        line-height: 7rem;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: #333;
+        width: 90%;
+        margin: 2rem auto;
+      }
     }
+
     & .quote-text {
       width: 50%;
       margin-left: auto;
       font-size: 19px;
+
+      @include response(tab-port) {
+        width: 100%;
+      }
     }
 
     &__quote--secondary {
@@ -35,16 +60,19 @@ header.page-info {
     }
 
     &__contacts {
-      width: 30%;
+      width: 25%;
+
       & p {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
       }
+
       & div {
         margin-top: 1rem;
         font-size: 19px;
         color: #b20000;
       }
+
       & address {
         margin-top: 1rem;
         font-size: 19px;
@@ -58,10 +86,19 @@ header.page-info {
     display: flex;
     margin-left: 35%;
 
+    @include response(tab-port) {
+      margin-left: 0;
+    }
+
     &__head {
       text-align: left;
       font-size: 19px;
       font-style: normal;
+      margin-bottom: 2rem;
+
+      @include response(phone) {
+        text-align: center;
+      }
 
       & address {
         font-style: normal;
@@ -78,67 +115,78 @@ header.page-info {
       padding-left: 1rem;
     }
   }
-}
 
-.section4 {
-  padding: 10rem 0;
-  display: flex;
-  flex-direction: column;
-  font-size: 19px;
-  font-style: normal;
-
-  & > * {
+  .section4 {
+    padding: 10rem 0;
     display: flex;
-    margin: 5rem 0;
-  }
+    flex-direction: column;
+    font-size: 19px;
+    font-style: normal;
 
-  &__job {
-    & > h4 {
-      padding-left: 5rem;
-      width: 35%;
+    &__form {
+      display: flex;
+
+      & input {
+        border: none;
+        background-color: transparent;
+        height: 20px;
+      }
+
+      & button {
+        border: none;
+        background-color: transparent;
+        position: relative;
+        width: 20px;
+        height: 20px;
+
+        &::after {
+          content: "\003e";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
     }
-    & div {
+
+    &-link {
+      color: #b20000;
+    }
+
+    &__heading {
+      padding-left: 10%;
+      width: 35%;
+
+      @include response(tab-port) {
+        padding-left: 0;
+      }
+
+      @include response(phone) {
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+    }
+
+    &__text {
       width: 65%;
 
       & p {
         margin-bottom: 2rem;
       }
     }
-    &-link {
-      color: #b20000;
+
+    &>* {
+      display: flex;
+      margin: 5rem 0;
+
+      @include response(phone) {
+        flex-direction: column;
+
+        &>* {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
     }
-  }
-
-  &__sub {
-    & > h4 {
-      padding-left: 5rem;
-      width: 35%;
-    }
-    & div {
-      width: 65%;
-    }
-  }
-}
-
-.sub-input {
-  margin-top: 2rem;
-  border: none;
-  background-color: transparent;
-  height: 20px;
-}
-
-.submit-button {
-  border: none;
-  background-color: transparent;
-  position: relative;
-  width: 20px;
-  height: 20px;
-
-  &::after {
-    content: "\003e";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }
