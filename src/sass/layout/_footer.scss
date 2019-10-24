@@ -10,18 +10,15 @@
   @include response(phone) {
     font-size: 10px;
   }
-  &__sublist {
-    text-align: right;
-  }
+
   &__contacts {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 20rem;
 
-    @include response(phone) {
+    @include response(tab-port) {
       margin-right: 0;
-      align-items: flex-start;
     }
   }
 }

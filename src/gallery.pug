@@ -2,10 +2,41 @@ include pug/page-template.pug
     header.header.page-gallery
         include pug/header.pug
     main.main.page-gallery 
-        .slider(id="main-slider")
-            .slider-wrapper
-                img(src='/assets/page1/1.jpg', alt='1', class='slide')
-                img(src='/assets/page1/2.png', alt='2', class='slide')
-                img(src='/assets/page1/3.jpg', alt='3', class='slide')
-                img(src='/assets/page1/4.jpg', alt='4', class='slide')
+        section.section1
+            h1.prequote-heading Welcome to The Kinkfolk Gallery
+            div           
+                p.quote-text.quote-text--right Designed by Norm Architects, The Kinfolk Gallery is a collaborative, multifunctional space in the heart of Copenhagen where our friends and partners come together to share ideas and showcase their work.
+                p.quote-text.quote-text--right Co-created in partnership with some of the world’s leading interiors brands, The Kinfolk Gallery is available to host a variety of events, such as art exhibitions, visiting pop-up shops, guest lectures, fashion showings, workshops, dinner gatherings and photo shoots.
+        section.section2
+            .slider(id="main-slider")
+                .slider-wrapper
+                    img(src='/assets/page-gallery/TheKinfolkGallery_01.jpg', alt='TheKinfolkGallery_01', class='slide')
+                    img(src='/assets/page-gallery/TheKinfolkGallery_02.jpg', alt='TheKinfolkGallery_02', class='slide')
+                    img(src='/assets/page-gallery/TheKinfolkGallery_03.jpg', alt='TheKinfolkGallery_03', class='slide')
+        section.section3
+            div
+                .motion-heading Partners
+                .motion-content 
+                    p The Kinfolk Gallery was co-created in partnership with some of the world’s top interiors brands.
+                    a(href="#", class="link") Apparatus
+                    a(href="#", class="link") B&O Play
+                    a(href="#", class="link") Dinesen
+                    a(href="#", class="link") Fade Acoustic Ceilings
+                    a(href="#", class="link") Lambert & Fils
+                    a(href="#", class="link") Kabe
+                    a(href="#", class="link") Kvadrat
+                    a(href="#", class="link") Menu
+                    a(href="#", class="link") Muuto
+                    a(href="#", class="link") Norm Architects
+                    a(href="#", class="link") Paustian
+                    a(href="#", class="link") Reform
+                    a(href="#", class="link") Rich Brilliant Willing
+                    a(href="#", class="link") Sørensen Leather
+                    a(href="#", class="link") Vitra
+                    a(href="#", class="link") Vola
+                    a(href="#", class="link") Ole Palsby Design
+            div
+                .motion-heading Contact
+                .motion-content For more information about The Kinfolk Gallery, press, and venue inquires, please feel free to contact 
+                    a(href="mailto:press@kinfolk.com", class="link") press@kinfolk.com
     include pug/footer.pug
