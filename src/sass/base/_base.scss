@@ -51,3 +51,12 @@ a {
 .container {
   max-width: 1920px;
 }
+
+.lazyload {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: all 3s;
+}

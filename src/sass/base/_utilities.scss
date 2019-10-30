@@ -135,6 +135,7 @@ video {
 
 section[class^="section"] {
   @include response(tab-port) {
+    margin: 0 !important;
     display: flex;
     flex-direction: column;
 
