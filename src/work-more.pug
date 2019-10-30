@@ -1,4 +1,4 @@
-include pug/page-template.pug
+include pug/head-template.pug
     header.header.page2
         include pug/header.pug
     main.main.page2 
@@ -15,10 +15,11 @@ include pug/page-template.pug
                     h4.image-type Editorial
         section.section2
             figure.section2__img1
-                    img(src="/assets/page2/3.gif", alt="gif3", class="")
-                    figcaption
-                        h2.image-heading The Kinfolk Home
-                        h4.image-type Film
+                video(autoplay loop muted playsinline)
+                    source(src="/assets/page2/3.mp4", type="video/mp4")
+                figcaption
+                    h2.image-heading The Kinfolk Home
+                    h4.image-type Film
             blockquote.section2__quote.quote
                 p.quote-text Other magazines may have come before it, but Kinfolk sparked a new form of lifestyle publishing that provides a broader approach to living, traveling, cooking and discovering new things to make and do. And the appeal seems to be universal.
                 p.quote-author Forbes Magazine
@@ -51,7 +52,8 @@ include pug/page-template.pug
                     p.quote-text One of the key methods some designers adopt to overcome creative blocks is called divergent thinking. This thought process facilitates innovation and creativity by exploring options rather than adhering to a rigid compendium of rules. Like design, happiness isn’t one-size-fits-all, and we need to consider our own needs rather than resorting to people-pleasing solutions. Similarly, products designed for the masses without considering individuals—everything from right-handed fountain pens to “flesh-colored” Band-Aids—often leave a significant percentage of the population wanting. When it comes to our individual happiness, we need to keep our minds open instead of blindly following the pack—what actually brings us joy rarely aligns with what should make us happy.
                     p.quote-author Rachel Eva Lim, Happiness by design, Kinfolk design issue         
                 figure.section5__img2
-                    img(src="/assets/page2/8.gif", alt="img8", class="")
+                    video(autoplay loop muted playsinline)
+                        source(src="/assets/page2/8.mp4", type="video/mp4")
                     figcaption.image__desc
                         h2.image-heading Honey Harvest
                         h4.image-type Film

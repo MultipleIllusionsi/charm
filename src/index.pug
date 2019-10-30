@@ -1,4 +1,4 @@
-include pug/page-template.pug
+include pug/head-template.pug
     header.header.page1
         include pug/header.pug
     main.main.page1
@@ -9,7 +9,7 @@ include pug/page-template.pug
                     h2.image-heading Order in the Cours
                     h4.image-type Editorial
             figure.section1__img2
-                img(src="/assets/page1/2.png", alt="img2", class="")
+                img(src="/assets/page1/2.jpg", alt="img2", class="")
                 figcaption.image__desc
                     h2.image-heading New Tendency
                     h4.image-type Editorial
@@ -50,7 +50,8 @@ include pug/page-template.pug
                 p.quote-text In the rise of the homemade, the handmade, the craft-made and the self-made, there’s this revival of the individual and the idea of creating a product that satisfies a particular use or user rather than the global population. In many cases, I think that’s why we’re returning to old processes, materials and methods of production. But we’re also generating new ones that allow a similar approach to small-batch local productions—we’re generating a new language and a new form of beauty in itself.
                 p.quote-author Max Lamb, Kinfolk's design issue
             figure.section6__img1
-                img(src="/assets/page1/8.gif", alt="gif8", class="")
+                video(autoplay loop muted playsinline)
+                    source(src="/assets/page1/8.mp4", type="video/mp4")
                 figcaption
                     h2.image-heading My Other Half
                     h4.image-type Film
@@ -79,7 +80,8 @@ include pug/page-template.pug
                         h2.image-heading LG Electronics
                         h4.image-type Advertising
                 figure.section9__img2
-                    img(src="/assets/page1/13.gif", alt="gif13", class="")
+                    video(autoplay loop muted playsinline)
+                        source(src="/assets/page1/13.mp4", type="video/mp4")
                     figcaption
                         h2.image-heading Making Soda
                         h4.image-type Film

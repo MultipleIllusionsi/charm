@@ -12,7 +12,8 @@
   }
 }
 
-img {
+img,
+video {
   width: 100%;
   filter: grayscale(1);
   mix-blend-mode: multiply;
