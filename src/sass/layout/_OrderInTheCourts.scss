@@ -1,0 +1,82 @@
+header.order-in-the-courts {
+    background-color: #f8f8f8c0;
+}
+
+.order-in-the-courts {
+    background-color: #f8f8f8;
+
+    &__img {
+        filter: none;
+    }
+
+    .section1 {
+        figcaption {
+            margin-bottom: 3rem;
+        }
+
+        &__img1 {
+            width: 100%;
+        }
+    }
+
+    .section2 {
+        margin-top: 8rem;
+
+        &__quote {
+            width: 50%;
+            margin-left: auto;
+        }
+    }
+
+    .section3 {
+        margin-top: 8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__img1 {
+            width: 50%;
+            margin-left: 7.5rem;
+        }
+
+        & .slider {
+            width: 33%;
+            height: 60rem;
+        }
+
+
+    }
+
+    .section4 {
+        margin-top: 15rem;
+
+        &__img1 {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+
+    .section5 {
+        margin-top: 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &__img1 {
+            margin-top: 15rem;
+            width: 35%;
+        }
+
+        &__img2 {
+            width: 50%;
+        }
+    }
+
+    .section6 {
+        margin-top: 10rem;
+
+        &__img1 {
+            width: 100%;
+        }
+    }
+}

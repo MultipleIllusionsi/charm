@@ -2,15 +2,11 @@
   color: #b20000;
 }
 
-.quote-text--right {
-  width: 50%;
-  margin-left: auto;
-  font-size: 19px;
-
-  @include response(tab-port) {
-    width: 100%;
-  }
+.cursive {
+  font-style: italic;
+  margin-right: 3px;
 }
+
 
 img,
 video {
@@ -24,115 +20,6 @@ video {
   }
 }
 
-.prequote-heading {
-  @include Garamond(bold);
-  font-size: 36px;
-  color: #333;
-  text-align: center;
-  letter-spacing: 0.5px;
-
-  width: 50%;
-  margin: 0 auto;
-  line-height: 4rem;
-  margin-bottom: 10rem;
-
-  @include response(tab-land) {
-    width: 75%;
-    line-height: 5rem;
-  }
-
-  @include response(phone) {
-    width: 100%;
-    line-height: 7rem;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    height: 1px;
-    background-color: #333;
-    width: 90%;
-    margin: 2rem auto;
-  }
-}
-
-.image {
-  &-heading {
-    @include Garamond(bold);
-    font-size: 36px;
-    color: #333;
-    text-align: center;
-    letter-spacing: 0.5px;
-  }
-
-  &-type {
-    @include Garamond(medium);
-    font-size: 12px;
-    color: #b20000;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center;
-  }
-}
-
-.quote {
-  &-text {
-    @include Garamond(medium);
-    line-height: 26.6px;
-    font-size: 20px;
-    color: #333;
-    letter-spacing: 0.5px;
-    text-align: left;
-    padding-bottom: 1.5rem;
-  }
-
-  &-author {
-    @include Garamond(medium);
-    font-size: 12px;
-    color: #b20000;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: left;
-    padding-top: 1.5rem;
-  }
-
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: #333;
-  }
-
-  &::before {
-    margin-bottom: 2.5rem;
-  }
-
-  &::after {
-    margin-top: 2.5rem;
-  }
-}
-
-.next-page {
-  width: 50%;
-  margin: 0 auto;
-  padding: 15rem 0;
-
-  @include response(phone) {
-    width: 80%;
-  }
-
-  &::before {
-    content: "";
-    margin-bottom: 4rem;
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: #333;
-  }
-}
-
 section[class^="section"] {
   @include response(tab-port) {
     margin: 0 !important;
@@ -141,7 +28,8 @@ section[class^="section"] {
 
     &>* {
       width: 100% !important;
-      margin: 10rem 0 0 !important;
+      // margin: 10rem 0 0 !important;
+      margin: 5rem 0 !important;
     }
   }
 }
@@ -171,5 +59,26 @@ section[class^="section"] {
     & p {
       margin-bottom: 2rem;
     }
+  }
+}
+
+.section-credits {
+  width: 100%;
+  padding: 8rem 0;
+  margin-left: auto;
+
+  &>* {
+    width: 50%;
+    margin-left: auto;
+  }
+
+  &__heading {
+    @include Play;
+    font-size: 16px;
+  }
+
+  &__text {
+    margin-top: 1rem;
+    font-size: 20px;
   }
 }

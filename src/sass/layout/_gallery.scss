@@ -35,6 +35,12 @@ header.page-gallery {
 
     .section2 {
         margin-top: 10rem;
+
+        & .slider {
+            width: 60%;
+            margin: 2rem auto 0 7.5rem;
+            height: 50rem;
+        }
     }
 
     .section3 {

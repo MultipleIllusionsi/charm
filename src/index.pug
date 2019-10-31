@@ -1,32 +1,37 @@
-include pug/head-template.pug
+include pug/templates/head-template.pug
     header.header.page1
-        include pug/header.pug
+        include pug/templates/header.pug
     main.main.page1
         section.section1 
             figure.section1__img1
-                img(src="/assets/page1/1.jpg", alt="img1", class="")
+                a(href="pug/addit-page/order-in-the-courts.pug")
+                    img(src="/assets/page1/1.jpg", alt="img1", class="")
                 figcaption
                     h2.image-heading Order in the Cours
                     h4.image-type Editorial
             figure.section1__img2
-                img(src="/assets/page1/2.jpg", alt="img2", class="")
+                a(href="pug/addit-page/new-tendency.pug")
+                    img(src="/assets/page1/2.jpg", alt="img2", class="")
                 figcaption.image__desc
                     h2.image-heading New Tendency
                     h4.image-type Editorial
         section.section2
             figure.section2__img1
-                img(src="/assets/page1/3.jpg", alt="img3", class="")
+                a(href="pug/addit-page/anxious.pug")
+                    img(src="/assets/page1/3.jpg", alt="img3", class="")
                 figcaption
                     h2.image-heading In Anxious Anticipation
                     h4.image-type Editorial
         section.section3 
             figure.section3__img1
-                img(data-src="/assets/page1/4.jpg", alt="img4", class="lazyload")
+                a(href="pug/addit-page/stutterheim.pug")
+                    img(data-src="/assets/page1/4.jpg", src="", alt="img4", class="lazyload")
                 figcaption
                     h2.image-heading Stutterheim
                     h4.image-type Advertising
             figure.section3__img2
-                img(data-src="/assets/page1/5.jpg", alt="img5", class="lazyload")
+                a(href="pug/addit-page/jack-and-kristoffer.pug")
+                    img(data-src="/assets/page1/5.jpg", src="", alt="img5", class="lazyload")
                 figcaption
                     h2.image-heading Jack &amp; Kristoffer
                     h4.image-type Editorial
@@ -36,12 +41,14 @@ include pug/head-template.pug
                 p.quote-author In conversation with Ilse Crawford, Kinfolk's design issue
         section.section5
             figure.section5__img1
-                img(data-src="/assets/page1/6.jpg", alt="img6", class="lazyload")
+                a(href="pug/addit-page/ss15.pug")
+                    img(data-src="/assets/page1/6.jpg", src="", alt="img6", class="lazyload")
                 figcaption
                     h2.image-heading Ouur Collection SS15
                     h4.image-type Advertising
             figure.section5__img2
-                img(data-src="/assets/page1/7.jpg", alt="img7", class="lazyload")
+                a(href="pug/addit-page/kinfolk-home.pug")
+                    img(data-src="/assets/page1/7.jpg", src="", alt="img7", class="lazyload")
                 figcaption
                     h2.image-heading The Kinfolk Home
                     h4.image-type Publishing
@@ -57,25 +64,29 @@ include pug/head-template.pug
                     h4.image-type Film
         section.section7
             figure.section7__img1
-                img(data-src="/assets/page1/9.jpg", alt="img9", class="lazyload")
+                a(href="pug/addit-page/design-issue.pug")
+                    img(data-src="/assets/page1/9.jpg", src="", alt="img9", class="lazyload")
                 figcaption
                     h2.image-heading The Design Issue
                     h4.image-type Publishing
             figure.section7__img2
-                img(data-src="/assets/page1/10.jpg", alt="img10", class="lazyload")
+                a(href="pug/addit-page/hunger-games.pug")
+                    img(data-src="/assets/page1/10.jpg", src="", alt="img10", class="lazyload")
                 figcaption
                     h2.image-heading The Hunger Games
                     h4.image-type Editorial
         section.section8
             figure.section8__img1
-                img(data-src="/assets/page1/11.jpg", alt="img11", class="lazyload")
+                a(href="pug/addit-page/ss16.pug")
+                    img(data-src="/assets/page1/11.jpg", src="", alt="img11", class="lazyload")
                 figcaption
                     h2.image-heading Our Collection SS16
                     h4.image-type Advertising
         section.section9
             .section9__content--left
                 figure.section9__img1
-                    img(data-src="/assets/page1/12.jpg", alt="img12", class="lazyload")
+                    a(href="pug/addit-page/lg-electronics.pug")
+                        img(data-src="/assets/page1/12.jpg", src="", alt="img12", class="lazyload")
                     figcaption
                         h2.image-heading LG Electronics
                         h4.image-type Advertising
@@ -90,19 +101,22 @@ include pug/head-template.pug
                     p.quote-text When you’re willing to participate, to go out of your comfort zone, to have a routine but break that routine, to listen and to be spontaneous, then you open yourself up to experience.
                     p.quote-author Michele Oka Doner, Natural Perspective, Kinfolk's design issue
                 figure.section9__img3
-                    img(data-src="/assets/page1/14.jpg", alt="img14", class="lazyload")
+                    a(href="pug/addit-page/hygge-notecard.pug")
+                        img(data-src="/assets/page1/14.jpg", src="", alt="img14", class="lazyload")
                     figcaption
                         h2.image-heading Hygge Notecard Collection
                         h4.image-type Publishing              
         section.section10
             figure.section10__img1
-                img(data-src="/assets/page1/15.jpg", alt="img15", class="lazyload")
+                a(href="pug/addit-page/zara.pug")
+                    img(data-src="/assets/page1/15.jpg", src="", alt="img15", class="lazyload")
                 figcaption
                     h2.image-heading Zara
                     h4.image-type Advertising
         .next-page.image-heading 
-                a(href="/work-more.pug") Next Page
-    include pug/footer.pug
+                a(href="pug/addit-page/work-more.pug") Next Page
+    include pug/templates/footer.pug
+    script(src="/lazyload.js", defer)
                         
                     
             

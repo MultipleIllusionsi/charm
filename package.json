@@ -7,9 +7,7 @@
   "scripts": {
     "deploy": "gh-pages -d dist",
     "start": "parcel src/index.pug -d _test",
-    "start-work": "parcel src/work-more.pug -d _test",
-    "start-info": "parcel src/info.pug -d _test",
-    "start-gallery": "parcel src/gallery.pug -d _test",
+    "start-add": "parcel src/pug/addit-page/order-in-the-courts.pug -d _test",
     "build": "parcel build src/index.pug --public-url ./"
   },
   "author": "Zakharov S.S.",
