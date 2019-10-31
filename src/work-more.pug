@@ -1,6 +1,6 @@
-include ../templates/head-template.pug
+include pug/templates/head-template.pug
     header.header.page2
-        include ../templates/header.pug
+        include pug/templates/header.pug
     main.main.page2 
         section.section1 
             figure.section1__img1
@@ -91,6 +91,6 @@ include ../templates/head-template.pug
                     h2.image-heading Making Believe
                     h4.image-type Editorial
         .next-page.image-heading 
-                a(href="../../index.pug") Previous Page
-    include ../templates/footer.pug
+                a(href="index.pug") Previous Page
+    include pug/templates/footer.pug
     script(src="/lazyload.js", defer)
