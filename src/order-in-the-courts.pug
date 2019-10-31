@@ -1,37 +1,37 @@
 include pug/templates/head-template.pug
-    header.header.order-in-the-courts
-        include pug/templates/header.pug
-    main.main.order-in-the-courts
-        section.section1 
-            figure.section1__img1
-                figcaption
-                    h2.image-heading.image-heading--lg Order in the Courts
-                    h4.image-type Editorial
-                img(src="/assets/OrderInTheCourts/OrderInTheCourts01.jpg", alt="OrderInTheCourts 1", class="")
-        section.section2
-            blockquote.section2__quote.quote
-                p.quote-text Sporting endeavors keep us in shape and form shapes of their own: From baseball’s diamonds and snooker’s triangles to the goal lines we protect and the running tracks we circle, Kinfolk magazine took a closer look at the graphic patterns inherent in the athletic field. From Kinfolk's Design Issue.
-                p.quote-text Kinfolk is a lifestyle magazine published by Ouur. Founded in 2011, Kinfolk is now the leading independent lifestyle magazine for young creative professionals and also produces international editions in Japan, China, Korea and Russia. 
-        section.section3
-            .section3__img1              
-                img(src="/assets/OrderInTheCourts/OrderInTheCourts02.jpg", alt="OrderInTheCourts 2", class="")             
-            .slider(id="main-slider")
-                .slider-wrapper
-                    img(src='/assets/OrderInTheCourts/OrderInTheCourts03.jpg', alt='OrderInTheCourts 3', class='slide')
-                    img(src='/assets/OrderInTheCourts/OrderInTheCourts04.jpg', alt='OrderInTheCourts 4', class='slide')                 
-        section.section4
-            .section4__img1
-                img(src="/assets/OrderInTheCourts/OrderInTheCourts05.jpg", alt="OrderInTheCourts 5", class="")
-        section.section5
-            .section5__img1
-                img(src="/assets/OrderInTheCourts/OrderInTheCourts06.jpg", alt="OrderInTheCourts 6", class="")
-            .section5__img2
-                img(src="/assets/OrderInTheCourts/OrderInTheCourts07.jpg", alt="OrderInTheCourts 7", class="")
-        section.section6
-            .section6__img1
-                img(src="/assets/OrderInTheCourts/OrderInTheCourts08.jpg", alt="OrderInTheCourts 8", class="")
-        section.section-credits
-            h4.section-credits__heading Credits
-            p.section-credits__text #[span.cursive Photographer] Neil Bedford, #[span.cursive Stylist] Camilla Pole, #[span.cursive Art Director] Anja Verdugo, #[span.cursive Creative Director] Nathan Williams, #[span.cursive Editor]  Georgia Frances King
-    include pug/templates/footer.pug
-    script(src="/slider.js", defer)
+header.header.order-in-the-courts
+    include pug/templates/header.pug
+main.main.order-in-the-courts
+    section.section1 
+        figure.section1__img1
+            figcaption
+                h2.image-heading.image-heading--lg Order in the Courts
+                h4.image-type Editorial
+            img(src="/assets/OrderInTheCourts/OrderInTheCourts01.jpg", alt="OrderInTheCourts 1", class="")
+    section.section2
+        blockquote.section2__quote.quote
+            p.quote-text Sporting endeavors keep us in shape and form shapes of their own: From baseball’s diamonds and snooker’s triangles to the goal lines we protect and the running tracks we circle, Kinfolk magazine took a closer look at the graphic patterns inherent in the athletic field. From Kinfolk's Design Issue.
+            p.quote-text.quote-text--end Kinfolk is a lifestyle magazine published by Ouur. Founded in 2011, Kinfolk is now the leading independent lifestyle magazine for young creative professionals and also produces international editions in Japan, China, Korea and Russia. 
+    section.section3
+        .section3__img1              
+            img(src="/assets/OrderInTheCourts/OrderInTheCourts02.jpg", alt="OrderInTheCourts 2", class="")             
+        .slider(id="main-slider")
+            .slider-wrapper
+                img(src='/assets/OrderInTheCourts/OrderInTheCourts03.jpg', alt='OrderInTheCourts 3', class='slide')
+                img(src='/assets/OrderInTheCourts/OrderInTheCourts04.jpg', alt='OrderInTheCourts 4', class='slide')                 
+    section.section4
+        .section4__img1
+            img(src="/assets/OrderInTheCourts/OrderInTheCourts05.jpg", alt="OrderInTheCourts 5", class="")
+    section.section5
+        .section5__img1
+            img(src="/assets/OrderInTheCourts/OrderInTheCourts06.jpg", alt="OrderInTheCourts 6", class="")
+        .section5__img2
+            img(src="/assets/OrderInTheCourts/OrderInTheCourts07.jpg", alt="OrderInTheCourts 7", class="")
+    section.section6
+        .section6__img1
+            img(src="/assets/OrderInTheCourts/OrderInTheCourts08.jpg", alt="OrderInTheCourts 8", class="")
+    section.section-credits
+        h4.section-credits__heading Credits
+        p.section-credits__text #[span.cursive Photographer] Neil Bedford, #[span.cursive Stylist] Camilla Pole, #[span.cursive Art Director] Anja Verdugo, #[span.cursive Creative Director] Nathan Williams, #[span.cursive Editor]  Georgia Frances King
+include pug/templates/footer.pug
+script(src="/slider.js", defer)

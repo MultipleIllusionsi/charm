@@ -3,8 +3,6 @@ header.page-gallery {
 }
 
 .page-gallery {
-    background-color: #f8f8f8;
-
     .section1 {
         & .image-heading {
             width: 50%;
@@ -59,7 +57,10 @@ header.page-gallery {
             width: 35%;
             display: flex;
             flex-direction: column;
+
+            @include response(phone) {
+                width: 50%;
+            }
         }
     }
-
 }

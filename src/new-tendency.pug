@@ -1,12 +1,35 @@
 include pug/templates/head-template.pug
-    header.header.new-tendency
-        include pug/templates/header.pug
-    main.main.new-tendency
-        section.section1 
-            figure.section1__img1
-                figcaption
-                    h2.image-heading.image-heading--lg New Tendency
-                    h4.image-type Editorial
-                img(src="/assets/page1/1.jpg", alt="img1", class="")
-                
-    include pug/templates/footer.pug
+header.header.new-tendency
+    include pug/templates/header.pug
+main.main.new-tendency
+    section.section1 
+        figure.section1__img1
+            figcaption
+                h2.image-heading.image-heading--lg New Tendency
+                h4.image-type Editorial
+            img(src="/assets/NewTendency/NewTendency01.jpg", alt="NewTendency 1", class="")
+    section.section2
+        blockquote.section2__quote.quote
+            p.quote-text Manuel Goller and Sebastian Schönheit believe in constantly redefining the norm and crafting fresh modes of thinking—which is why they decided to name their design studio New Tendency. Kinfolk magazine spoke to the co-founders of the Berlin-based practice about the importance of collaboration when designing timeless objects. From Kinfolk's Design Issue.
+            p.quote-text.quote-text--end Kinfolk is a lifestyle magazine published by Ouur. Founded in 2011, Kinfolk is now the leading independent lifestyle magazine for young creative professionals and also produces international editions in Japan, China, Korea and Russia.  
+    section.section3
+        .section3__img1
+            img(src="/assets/NewTendency/NewTendency02.jpg", alt="NewTendency 2", class="")
+        .section3__img2
+            img(src="/assets/NewTendency/NewTendency03.png", alt="NewTendency 3", class="")
+    section.section4
+        .section4__img1
+            img(src="/assets/NewTendency/NewTendency04.jpg", alt="NewTendency 4", class="")    
+    section.section5
+        blockquote.section5__quote.quote
+                p.quote-text.quote-text--end “Our work is based on the topology of everyday objects. The user’s need becomes the essence of our creations.” – Manuel Goller
+        .slider(id="main-slider")
+            .slider-wrapper
+                img(src='/assets/NewTendency/NewTendency05.jpg', alt='NewTendency 5', class='slide')
+                img(src='/assets/NewTendency/NewTendency06.jpg', alt='NewTendency 6', class='slide')    
+                img(src='/assets/NewTendency/NewTendency07.jpg', alt='NewTendency 7', class='slide')            
+    section.section-credits
+        h4.section-credits__heading Credits
+        p.section-credits__text #[span.cursive Photographer] Anders Schønnemann, #[span.cursive Writer] Mary Stutzman, #[span.cursive Art Director] Anja Verdugo, #[span.cursive Creative Director] Nathan Williams, #[span.cursive Editor] Georgia Frances King
+include pug/templates/footer.pug
+script(src="/slider.js", defer)

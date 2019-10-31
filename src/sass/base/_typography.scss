@@ -23,7 +23,7 @@
         letter-spacing: 0.5px;
 
         &--lg {
-            font-size: 4.4rem;
+            font-size: 6rem;
         }
     }
 
@@ -46,6 +46,10 @@
         letter-spacing: 0.5px;
         text-align: left;
         padding-bottom: 1.5rem;
+
+        &--end {
+            padding-bottom: 0;
+        }
     }
 
     &-author {

@@ -1,8 +1,10 @@
-header.order-in-the-courts {
-    background-color: #f8f8f8c0;
+header.anxious {
+    background-color: #ea8685c0;
 }
 
-.order-in-the-courts {
+.anxious {
+    background-color: #ea8685;
+
     .section1 {
         figcaption {
             margin-bottom: 3rem;
@@ -23,51 +25,48 @@ header.order-in-the-courts {
     }
 
     .section3 {
-        margin-top: 8rem;
+        margin-top: 10rem;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
 
         &__img1 {
-            width: 50%;
-            margin-left: 7.5rem;
+            width: 60%;
+            margin-bottom: 10rem;
         }
 
-        & .slider {
-            width: 33%;
-            height: 60rem;
+        &__img2 {
+            width: 35%;
         }
-
-
     }
 
     .section4 {
-        margin-top: 15rem;
+        margin-top: 12rem;
 
-        &__img1 {
+        &__quote {
             width: 50%;
             margin: 0 auto;
         }
     }
 
     .section5 {
-        margin-top: 10rem;
+        margin: 12rem auto 0;
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        justify-content: center;
 
         &__img1 {
-            margin-top: 15rem;
-            width: 35%;
+            width: 45%;
+            padding: 1rem;
         }
 
         &__img2 {
-            width: 50%;
+            width: 45%;
+            padding: 1rem;
         }
     }
 
     .section6 {
-        margin-top: 10rem;
+        margin-top: 8rem;
 
         &__img1 {
             width: 100%;

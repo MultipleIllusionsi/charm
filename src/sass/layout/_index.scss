@@ -1,9 +1,22 @@
-header.page1 {
+header.homepage {
   background-color: #e6d8ccb2;
 }
 
-.page1 {
+.homepage {
+
+  img,
+  video {
+    filter: grayscale(1);
+    mix-blend-mode: multiply;
+
+    &:hover {
+      filter: none;
+      mix-blend-mode: normal;
+    }
+  }
+
   background-color: #e6d8cc;
+
   .section1 {
     display: flex;
     justify-content: space-between;
@@ -12,6 +25,7 @@ header.page1 {
     &__img1 {
       width: 45%;
     }
+
     &__img2 {
       width: 33%;
     }

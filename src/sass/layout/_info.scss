@@ -3,12 +3,6 @@ header.page-info {
 }
 
 .page-info {
-  background-color: #f8f8f8;
-
-  &__img {
-    filter: none;
-  }
-
   .section1 {}
 
   .section2 {
@@ -55,10 +49,6 @@ header.page-info {
       font-size: 19px;
       font-style: normal;
       margin-bottom: 2rem;
-
-      @include response(phone) {
-        text-align: center;
-      }
 
       & address {
         font-style: normal;

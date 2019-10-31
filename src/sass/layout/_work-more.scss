@@ -1,9 +1,20 @@
-header.page2 {
+header.work-more {
   background-color: #ffccccb7;
 }
 
-.page2 {
+.work-more {
   background-color: #ffcccc;
+
+  img,
+  video {
+    filter: grayscale(1);
+    mix-blend-mode: multiply;
+
+    &:hover {
+      filter: none;
+      mix-blend-mode: normal;
+    }
+  }
 
   .section1 {
     display: flex;

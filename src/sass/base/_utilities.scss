@@ -7,29 +7,22 @@
   margin-right: 3px;
 }
 
-
 img,
 video {
   width: 100%;
-  filter: grayscale(1);
-  mix-blend-mode: multiply;
-
-  &:hover {
-    filter: none;
-    mix-blend-mode: normal;
-  }
 }
 
 section[class^="section"] {
   @include response(tab-port) {
     margin: 0 !important;
+    padding: 0 !important;
     display: flex;
     flex-direction: column;
 
     &>* {
       width: 100% !important;
-      // margin: 10rem 0 0 !important;
       margin: 5rem 0 !important;
+      padding: 0 !important;
     }
   }
 }
