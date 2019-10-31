@@ -16,7 +16,7 @@ main.main.new-tendency
         .section3__img1
             img(src="/assets/NewTendency/NewTendency02.jpg", alt="NewTendency 2", class="")
         .section3__img2
-            img(src="/assets/NewTendency/NewTendency03.png", alt="NewTendency 3", class="")
+            img(src="/assets/NewTendency/NewTendency03.jpg", alt="NewTendency 3", class="")
     section.section4
         .section4__img1
             img(src="/assets/NewTendency/NewTendency04.jpg", alt="NewTendency 4", class="")    
@@ -25,11 +25,14 @@ main.main.new-tendency
                 p.quote-text.quote-text--end “Our work is based on the topology of everyday objects. The user’s need becomes the essence of our creations.” – Manuel Goller
         .slider(id="main-slider")
             .slider-wrapper
-                img(src='/assets/NewTendency/NewTendency05.jpg', alt='NewTendency 5', class='slide')
-                img(src='/assets/NewTendency/NewTendency06.jpg', alt='NewTendency 6', class='slide')    
-                img(src='/assets/NewTendency/NewTendency07.jpg', alt='NewTendency 7', class='slide')            
+                img(src='/assets/NewTendency/NewTendency05.jpg', alt='NewTendency 5', class='slide first-slide')
+                img(src='/assets/NewTendency/NewTendency06.jpg', alt='NewTendency 6', class='slide other-slide')    
+                img(src='/assets/NewTendency/NewTendency07.jpg', alt='NewTendency 7', class='slide other-slide')            
     section.section-credits
-        h4.section-credits__heading Credits
-        p.section-credits__text #[span.cursive Photographer] Anders Schønnemann, #[span.cursive Writer] Mary Stutzman, #[span.cursive Art Director] Anja Verdugo, #[span.cursive Creative Director] Nathan Williams, #[span.cursive Editor] Georgia Frances King
+        .section-credits__wrapper
+            h4.section-credits__heading Credits
+            p.section-credits__text #[span.cursive Photographer] Anders Schønnemann, #[span.cursive Writer] Mary Stutzman, #[span.cursive Art Director] Anja Verdugo, #[span.cursive Creative Director] Nathan Williams, #[span.cursive Editor] Georgia Frances King
+    .next-page.image-heading 
+            a(href="index.pug") Back
 include pug/templates/footer.pug
 script(src="/slider.js", defer)

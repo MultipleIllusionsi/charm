@@ -1,8 +1,8 @@
 .header {
   z-index: 100;
   width: 100%;
+  max-width: 192rem;
   position: fixed;
-  display: flex;
   padding: 2rem 3rem;
 
   &__logo {
@@ -20,6 +20,7 @@
       transform: translateX(100%);
     }
   }
+
   nav {
     width: 100%;
   }

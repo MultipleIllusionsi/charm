@@ -4,12 +4,20 @@
     position: relative;
 }
 
-.slide {
-    filter: none;
-    object-fit: cover;
+.first-slide {
+    position: relative;
+}
+
+.other-slide {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+}
+
+.slide {
+    object-fit: cover;
     opacity: 0;
     transition: opacity 1s ease-out;
 }

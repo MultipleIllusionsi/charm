@@ -7,7 +7,7 @@
 .quote-text--right {
     width: 50%;
     margin-left: auto;
-    font-size: 19px;
+    font-size: 1.9rem;
 
     @include response(tab-port) {
         width: 100%;
@@ -17,7 +17,7 @@
 .image {
     &-heading {
         @include Garamond(bold);
-        font-size: 36px;
+        font-size: 3.6rem;
         color: #333;
         text-align: center;
         letter-spacing: 0.5px;
@@ -29,7 +29,7 @@
 
     &-type {
         @include Garamond(medium);
-        font-size: 12px;
+        font-size: 1.2rem;
         color: #b20000;
         text-transform: uppercase;
         letter-spacing: 3px;
@@ -40,8 +40,8 @@
 .quote {
     &-text {
         @include Garamond(medium);
-        line-height: 26.6px;
-        font-size: 20px;
+        line-height: 2.6rem;
+        font-size: 2rem;
         color: #333;
         letter-spacing: 0.5px;
         text-align: left;
@@ -54,7 +54,7 @@
 
     &-author {
         @include Garamond(medium);
-        font-size: 12px;
+        font-size: 1.2rem;
         color: #b20000;
         text-transform: uppercase;
         letter-spacing: 3px;
@@ -87,6 +87,7 @@
 
     @include response(phone) {
         width: 80%;
+        padding: 10rem 0;
     }
 
     &::before {
@@ -101,7 +102,7 @@
 
 .prequote-heading {
     @include Garamond(bold);
-    font-size: 36px;
+    font-size: 3.6rem;
     color: #333;
     text-align: center;
     letter-spacing: 0.5px;
@@ -129,4 +130,9 @@
         width: 90%;
         margin: 2rem auto;
     }
+}
+
+.text-soon {
+    font-size: 2.6rem;
+    color: rgb(100, 100, 100);
 }

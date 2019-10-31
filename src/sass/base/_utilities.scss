@@ -29,7 +29,7 @@ section[class^="section"] {
 
 .motion {
   &-heading {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-style: normal;
     font-weight: bold;
     margin-left: 7.5rem;
@@ -45,7 +45,7 @@ section[class^="section"] {
   }
 
   &-content {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-style: normal;
     width: 65%;
 
@@ -57,7 +57,7 @@ section[class^="section"] {
 
 .section-credits {
   width: 100%;
-  padding: 8rem 0;
+  margin-top: 8rem;
   margin-left: auto;
 
   &>* {
@@ -67,11 +67,11 @@ section[class^="section"] {
 
   &__heading {
     @include Play;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   &__text {
     margin-top: 1rem;
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
