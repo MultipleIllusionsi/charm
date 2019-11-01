@@ -2,13 +2,13 @@
   background-color: #333;
   padding: 2rem 3rem;
   color: rgba(230, 216, 204, 0.5);
-
   @include Play;
-  font-size: 13px;
+  font-size: 1.3rem;
   letter-spacing: 1px;
 
   @include response(phone) {
-    font-size: 10px;
+    font-size: 0.9rem;
+    padding: 2rem 2rem;
   }
 
   &__contacts {

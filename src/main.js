@@ -12,4 +12,9 @@ const settingBcgColor = () => {
   const currentPageBgColor = window.getComputedStyle(mainPageElement)
     .backgroundColor;
   appBody.style.background = currentPageBgColor;
+
+  if (window.innerWidth < 601) {
+    const menu = document.querySelector(".header__nav");
+    menu.style.backgroundColor = currentPageBgColor;
+  }
 };

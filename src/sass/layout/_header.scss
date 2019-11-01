@@ -5,6 +5,10 @@
   position: fixed;
   padding: 2rem 3rem;
 
+  @include response(phone) {
+    padding: 2rem 2rem;
+  }
+
   &__logo {
     display: inline-block;
     font-size: 4rem;
@@ -33,16 +37,16 @@
     margin-right: 20vw;
 
     @include response(phone) {
+      border-left: 1px solid #000;
       position: fixed;
       flex-direction: column;
-      background-color: transparent;
       right: -100%;
       top: 0;
       width: 100vw;
-      height: auto;
+      height: 100vh;
       padding: 8rem 0;
       z-index: 5000;
-      transition: all 0.7s ease-in;
+      transition: all 0.7s cubic-bezier(.5, -0.5, .1, 2);
       margin: 0;
     }
 
@@ -50,6 +54,11 @@
       font-size: 2.4rem;
       padding: 0 2rem;
       transition: 0.2s all;
+
+      @include response(phone) {
+        font-size: 3.4rem;
+        padding: 2rem 2rem;
+      }
 
       &:hover {
         color: #b20000;
@@ -65,11 +74,16 @@
     &:checked~.header__nav {
       transform: translateX(-50%);
     }
+
+    &:checked~.show-menu-btn {
+      transform: rotate(90deg);
+    }
   }
 }
 
 .show-menu-btn {
   display: none;
+  transition: all 0.7s cubic-bezier(.5, -0.5, .1, 2);
 
   @include response(phone) {
     display: block;

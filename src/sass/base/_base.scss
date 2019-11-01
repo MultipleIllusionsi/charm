@@ -35,6 +35,10 @@ body {
 
 main {
   padding: 14rem 3rem 0;
+
+  @include response(phone) {
+    padding: 8rem 2rem 0;
+  }
 }
 
 li {
