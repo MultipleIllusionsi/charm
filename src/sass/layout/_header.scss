@@ -23,15 +23,26 @@
 
   nav {
     width: 100%;
+    display: flex;
+    align-items: flex-end;
   }
 
   &__nav {
-    height: 100%;
     display: flex;
-    align-items: center;
-    margin-right: 20rem;
+    margin-left: auto;
+    margin-right: 20vw;
 
     @include response(phone) {
+      position: fixed;
+      flex-direction: column;
+      background-color: transparent;
+      right: -100%;
+      top: 0;
+      width: 100vw;
+      height: auto;
+      padding: 8rem 0;
+      z-index: 5000;
+      transition: all 0.7s ease-in;
       margin: 0;
     }
 
@@ -40,13 +51,32 @@
       padding: 0 2rem;
       transition: 0.2s all;
 
-      &:nth-child(2) {
-        margin-left: auto;
-      }
-
       &:hover {
         color: #b20000;
       }
     }
+  }
+}
+
+#menu {
+  display: none;
+
+  @include response(phone) {
+    &:checked~.header__nav {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.show-menu-btn {
+  display: none;
+
+  @include response(phone) {
+    display: block;
+    z-index: 9999;
+    position: relative;
+    font-size: 3rem;
+    margin-left: auto;
+    cursor: pointer;
   }
 }

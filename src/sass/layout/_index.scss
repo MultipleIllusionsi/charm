@@ -3,6 +3,7 @@ header.homepage {
 }
 
 .homepage {
+  background-color: #e6d8cc;
 
   img,
   video {
@@ -14,8 +15,6 @@ header.homepage {
       mix-blend-mode: normal;
     }
   }
-
-  background-color: #e6d8cc;
 
   .section1 {
     display: flex;

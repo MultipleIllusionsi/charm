@@ -1,10 +1,13 @@
 nav
-    ul.header__nav
-        li
-            a(href="/index.pug", class="header__logo") Charm
+    a(href="/index.pug", class="header__logo") Charm
+    input(type="checkbox", id="menu", name="menu")
+    label(for="menu", aria-labelledby="menu", class="show-menu-btn") X
+    ul.header__nav            
         li.header__nav-item
             a(href="/index.pug") Work
         li.header__nav-item 
             a(href="/gallery.pug") Gallery
         li.header__nav-item 
             a(href="/info.pug") Info
+
+    
