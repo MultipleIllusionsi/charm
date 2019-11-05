@@ -8,13 +8,11 @@ const appInit = () => {
 
 const settingBcgColor = () => {
   const appBody = document.querySelector("body");
-  const mainPageElement = document.querySelector("main");
-  const currentPageBgColor = window.getComputedStyle(mainPageElement)
+  const currentPageColor = window.getComputedStyle(appBody)
     .backgroundColor;
-  appBody.style.background = currentPageBgColor;
 
   if (window.innerWidth < 601) {
     const menu = document.querySelector(".header__nav");
-    menu.style.backgroundColor = currentPageBgColor;
+    menu.style.backgroundColor = currentPageColor;
   }
 };

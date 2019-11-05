@@ -1,96 +1,99 @@
-include pug/templates/head-template.pug
-header.header.work-more
-    include pug/templates/header.pug
-main.main.work-more
-    section.section1 
-        figure.section1__img1
-            img(src="/assets/work-more/1.jpg", alt="img1", class="")
-            figcaption
-                h2.image-heading Seeing Double #[span.text-soon (soon)]
-                h4.image-type Editorial
-        figure.section1__img2
-            img(src="/assets/work-more/2.jpg", alt="img2", class="")
-            figcaption.image__desc
-                h2.image-heading Frida Escobedo #[span.text-soon (soon)]
-                h4.image-type Editorial
-    section.section2
-        figure.section2__img1
-            video(autoplay loop muted playsinline)
-                source(src="/assets/work-more/3.mp4", type="video/mp4")
-            figcaption
-                h2.image-heading The Kinfolk Home #[span.text-soon (soon)]
-                h4.image-type Film
-        blockquote.section2__quote.quote
-            p.quote-text Other magazines may have come before it, but Kinfolk sparked a new form of lifestyle publishing that provides a broader approach to living, traveling, cooking and discovering new things to make and do. And the appeal seems to be universal.
-            p.quote-author Forbes Magazine
-    section.section3
-        figure.section3__img1
-            img(data-src="/assets/work-more/4.jpg", alt="img4", class="lazyload")
-            figcaption
-                h2.image-heading Minted #[span.text-soon (soon)]
-                h4.image-type Advertising
-        figure.section3__img2
-            img(data-src="/assets/work-more/5.jpg", alt="img5", class="lazyload")
-            figcaption.image__desc
-                h2.image-heading Weekend Edition Notecards #[span.text-soon (soon)]
-                h4.image-type Publishing
-    section.section4
-        figure.section4__img1
-            img(data-src="/assets/work-more/6.jpg", alt="img6", class="lazyload")
-            figcaption
-                h2.image-heading Ouur Collection AW15 #[span.text-soon (soon)]
-                h4.image-type Advertising
-    section.section5
-        .section5__content--left
-            figure.section5__img1
-                img(data-src="/assets/work-more/7.jpg", alt="img7", class="lazyload")
-                figcaption
-                    h2.image-heading Compare and Contrast #[span.text-soon (soon)]
-                    h4.image-type Editorial
-        .section5__content--right            
-            blockquote.section5__quote.quote
-                p.quote-text One of the key methods some designers adopt to overcome creative blocks is called divergent thinking. This thought process facilitates innovation and creativity by exploring options rather than adhering to a rigid compendium of rules. Like design, happiness isn’t one-size-fits-all, and we need to consider our own needs rather than resorting to people-pleasing solutions. Similarly, products designed for the masses without considering individuals—everything from right-handed fountain pens to “flesh-colored” Band-Aids—often leave a significant percentage of the population wanting. When it comes to our individual happiness, we need to keep our minds open instead of blindly following the pack—what actually brings us joy rarely aligns with what should make us happy.
-                p.quote-author Rachel Eva Lim, Happiness by design, Kinfolk design issue         
-            figure.section5__img2
-                video(autoplay loop muted playsinline)
-                    source(src="/assets/work-more/8.mp4", type="video/mp4")
-                figcaption.image__desc
-                    h2.image-heading Honey Harvest #[span.text-soon (soon)]
-                    h4.image-type Film
-    section.section6
-            figure.section6__img1
-                img(data-src="/assets/work-more/9.jpg", alt="img9", class="lazyload")
-                figcaption
-                    h2.image-heading In Praise of Slowness #[span.text-soon (soon)]
-                    h4.image-type Editorial
-    section.section7
-        .section7__content--left
-            figure.section7__img1
-                img(data-src="/assets/work-more/10.jpg", alt="img10", class="lazyload")
-                figcaption
-                    h2.image-heading Ouur Collection AW14 #[span.text-soon (soon)]
-                    h4.image-type Advertising
-            figure.section7__img2
-                img(data-src="/assets/work-more/11.jpg", alt="img11", class="lazyload")
-                figcaption
-                    h2.image-heading The Path to Success #[span.text-soon (soon)]
-                    h4.image-type Editorial
-        .section7__content--right
-            figure.section7__img3
-                img(data-src="/assets/work-more/12.jpg", alt="img12", class="lazyload")
-                figcaption
-                    h2.image-heading Geraldine Cleary #[span.text-soon (soon)]
-                    h4.image-type Editorial
-    section.section8
-        blockquote.section8__quote.quote
-                p.quote-text One of the fundamental ways to transform fear is to turn it into a sense of exhilaration. When I was working within the skydiving community, we thought of the divers as fearless people. But I discovered that’s not the case at all: They’re just as fearful as the rest of us, but they’re devoted enough to the exploration of the edges to find ways to manage that fear and transform it. And that’s a healthy thing. I recall a conversation with one person when I said, “What would happen if you pulled your rip cord and your parachute didn’t deploy?” and he said, “I would scream all the way to the ground! I don’t want to die. I’m not doing this because I have a death wish—I’m just as afraid of the possibilities as anybody else, but I have confidence in my ability to overcome the negative effects of fear and to maintain a certain kind of composure in the face of fear. 
-                p.quote-author In conversation with Stephen Lyng, Kinfolk Adrenaline Issue
-        figure.section8__img1
-            img(data-src="/assets/work-more/13.jpg", alt="img13", class="lazyload")
-            figcaption.image__desc
-                h2.image-heading Making Believe #[span.text-soon (soon)]
-                h4.image-type Editorial
-    .next-page.image-heading 
-            a(href="index.pug") Previous Page
-include pug/templates/footer.pug
-script(src="/lazyload.js", defer)
+doctype html
+html(lang="en")
+    include pug/templates/head-template.pug
+    body.work-more
+        header.header.work-more
+            include pug/templates/header.pug
+        main.main.work-more
+            section.section1 
+                figure.section1__img1
+                    img(src="/assets/work-more/1.jpg", alt="img1", class="")
+                    figcaption
+                        h2.image-heading Seeing Double #[span.text-soon (soon)]
+                        h4.image-type Editorial
+                figure.section1__img2
+                    img(src="/assets/work-more/2.jpg", alt="img2", class="")
+                    figcaption.image__desc
+                        h2.image-heading Frida Escobedo #[span.text-soon (soon)]
+                        h4.image-type Editorial
+            section.section2
+                figure.section2__img1
+                    video(autoplay loop muted playsinline)
+                        source(src="/assets/work-more/3.mp4", type="video/mp4")
+                    figcaption
+                        h2.image-heading The Kinfolk Home #[span.text-soon (soon)]
+                        h4.image-type Film
+                blockquote.section2__quote.quote
+                    p.quote-text Other magazines may have come before it, but Kinfolk sparked a new form of lifestyle publishing that provides a broader approach to living, traveling, cooking and discovering new things to make and do. And the appeal seems to be universal.
+                    p.quote-author Forbes Magazine
+            section.section3
+                figure.section3__img1
+                    img(data-src="/assets/work-more/4.jpg", src="", alt="img4", class="lazyload")
+                    figcaption
+                        h2.image-heading Minted #[span.text-soon (soon)]
+                        h4.image-type Advertising
+                figure.section3__img2
+                    img(data-src="/assets/work-more/5.jpg", src="", alt="img5", class="lazyload")
+                    figcaption.image__desc
+                        h2.image-heading Weekend Edition Notecards #[span.text-soon (soon)]
+                        h4.image-type Publishing
+            section.section4
+                figure.section4__img1
+                    img(data-src="/assets/work-more/6.jpg", src="", alt="img6", class="lazyload")
+                    figcaption
+                        h2.image-heading Ouur Collection AW15 #[span.text-soon (soon)]
+                        h4.image-type Advertising
+            section.section5
+                .section5__content--left
+                    figure.section5__img1
+                        img(data-src="/assets/work-more/7.jpg", src="", alt="img7", class="lazyload")
+                        figcaption
+                            h2.image-heading Compare and Contrast #[span.text-soon (soon)]
+                            h4.image-type Editorial
+                .section5__content--right            
+                    blockquote.section5__quote.quote
+                        p.quote-text One of the key methods some designers adopt to overcome creative blocks is called divergent thinking. This thought process facilitates innovation and creativity by exploring options rather than adhering to a rigid compendium of rules. Like design, happiness isn’t one-size-fits-all, and we need to consider our own needs rather than resorting to people-pleasing solutions. Similarly, products designed for the masses without considering individuals—everything from right-handed fountain pens to “flesh-colored” Band-Aids—often leave a significant percentage of the population wanting. When it comes to our individual happiness, we need to keep our minds open instead of blindly following the pack—what actually brings us joy rarely aligns with what should make us happy.
+                        p.quote-author Rachel Eva Lim, Happiness by design, Kinfolk design issue         
+                    figure.section5__img2
+                        video(autoplay loop muted playsinline)
+                            source(src="/assets/work-more/8.mp4", type="video/mp4")
+                        figcaption.image__desc
+                            h2.image-heading Honey Harvest #[span.text-soon (soon)]
+                            h4.image-type Film
+            section.section6
+                    figure.section6__img1
+                        img(data-src="/assets/work-more/9.jpg", src="", alt="img9", class="lazyload")
+                        figcaption
+                            h2.image-heading In Praise of Slowness #[span.text-soon (soon)]
+                            h4.image-type Editorial
+            section.section7
+                .section7__content--left
+                    figure.section7__img1
+                        img(data-src="/assets/work-more/10.jpg", src="", alt="img10", class="lazyload")
+                        figcaption
+                            h2.image-heading Ouur Collection AW14 #[span.text-soon (soon)]
+                            h4.image-type Advertising
+                    figure.section7__img2
+                        img(data-src="/assets/work-more/11.jpg", src="", alt="img11", class="lazyload")
+                        figcaption
+                            h2.image-heading The Path to Success #[span.text-soon (soon)]
+                            h4.image-type Editorial
+                .section7__content--right
+                    figure.section7__img3
+                        img(data-src="/assets/work-more/12.jpg", src="", alt="img12", class="lazyload")
+                        figcaption
+                            h2.image-heading Geraldine Cleary #[span.text-soon (soon)]
+                            h4.image-type Editorial
+            section.section8
+                blockquote.section8__quote.quote
+                        p.quote-text One of the fundamental ways to transform fear is to turn it into a sense of exhilaration. When I was working within the skydiving community, we thought of the divers as fearless people. But I discovered that’s not the case at all: They’re just as fearful as the rest of us, but they’re devoted enough to the exploration of the edges to find ways to manage that fear and transform it. And that’s a healthy thing. I recall a conversation with one person when I said, “What would happen if you pulled your rip cord and your parachute didn’t deploy?” and he said, “I would scream all the way to the ground! I don’t want to die. I’m not doing this because I have a death wish—I’m just as afraid of the possibilities as anybody else, but I have confidence in my ability to overcome the negative effects of fear and to maintain a certain kind of composure in the face of fear. 
+                        p.quote-author In conversation with Stephen Lyng, Kinfolk Adrenaline Issue
+                figure.section8__img1
+                    img(data-src="/assets/work-more/13.jpg", src="", alt="img13", class="lazyload")
+                    figcaption.image__desc
+                        h2.image-heading Making Believe #[span.text-soon (soon)]
+                        h4.image-type Editorial
+            .next-page.image-heading 
+                    a(href="index.pug") Previous Page
+        include pug/templates/footer.pug
+        script(src="/lazyload.js", defer)
