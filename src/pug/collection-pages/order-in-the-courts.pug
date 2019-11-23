@@ -1,9 +1,9 @@
 doctype html
 html(lang="en")
-    include pug/templates/head-template.pug
+    include ../templates/head-template.pug
     body.order-in-the-courts
         header.header.order-in-the-courts
-            include pug/templates/header.pug
+            include ../templates/header.pug
         main.main.order-in-the-courts
             section.section1 
                 figure.section1__img1
@@ -38,6 +38,6 @@ html(lang="en")
                     h4.section-credits__heading Credits
                     p.section-credits__text #[span.cursive Photographer] Neil Bedford, #[span.cursive Stylist] Camilla Pole, #[span.cursive Art Director] Anja Verdugo, #[span.cursive Creative Director] Nathan Williams, #[span.cursive Editor]  Georgia Frances King
             .next-page.image-heading 
-                    a(href="index.pug") Back
-        include pug/templates/footer.pug
+                    a(href="../../index.pug") Back
+        include ../templates/footer.pug
         script(src="/slider.js", defer)
