@@ -1,9 +1,9 @@
 doctype html
 html(lang="en")
-    include ../templates/head-template.pug
+    include pug/templates/head-template.pug
     body.work-more
         header.header.work-more
-            include ../templates/header.pug
+            include pug/templates/header.pug
         main.main.work-more
             section.section1 
                 figure.section1__img1
@@ -94,6 +94,6 @@ html(lang="en")
                         h2.image-heading Making Believe #[span.text-soon (soon)]
                         h4.image-type Editorial
             .next-page.image-heading 
-                    a(href="../../index.pug") Previous Page
-        include ../templates/footer.pug
+                    a(href="/index.pug") Previous Page
+        include pug/templates/footer.pug
         script(src="/lazyload.js", defer)

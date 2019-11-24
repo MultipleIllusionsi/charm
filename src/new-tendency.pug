@@ -1,9 +1,9 @@
 doctype html
 html(lang="en")
-    include ../templates/head-template.pug
+    include pug/templates/head-template.pug
     body.new-tendency
         header.header.new-tendency
-            include ../templates/header.pug
+            include pug/templates/header.pug
         main.main.new-tendency
             section.section1 
                 figure.section1__img1
@@ -36,6 +36,6 @@ html(lang="en")
                     h4.section-credits__heading Credits
                     p.section-credits__text #[span.cursive Photographer] Anders Schønnemann, #[span.cursive Writer] Mary Stutzman, #[span.cursive Art Director] Anja Verdugo, #[span.cursive Creative Director] Nathan Williams, #[span.cursive Editor] Georgia Frances King
             .next-page.image-heading 
-                    a(href="../../index.pug") Back
-        include ../templates/footer.pug
+                    a(href="/index.pug") Back
+        include pug/templates/footer.pug
         script(src="/slider.js", defer)
